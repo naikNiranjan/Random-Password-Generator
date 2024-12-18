@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Password Generator</h1>
+        <p class="subtitle">Get strong and secure passwords  .</p>
+        
+        <div class="password-wrapper">
+            <input type="text" id="passwordOutput" readonly>
+            <div class="password-actions">
+                <button id="regenerateBtn" class="icon-button" title="Regenerate">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+                <button id="copyBtn" class="icon-button" title="Copy to clipboard">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="strength-meter">
+            <div class="strength-label">Password Strength: <span id="strengthText">Weak</span></div>
+            <div class="strength-bar">
+                <div id="strengthIndicator"></div>
+            </div>
+        </div>
+
+        <div class="settings">
+            <div class="length-slider">
+                <label>Password Length: <span id="lengthValue">12</span></label>
+                <div class="slider-container">
+                    <input type="range" id="length" min="6" max="32" value="12">
+                    <button class="length-adjust" data-action="decrease">-</button>
+                    <button class="length-adjust" data-action="increase">+</button>
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="incUpper" checked>
+                    <span class="checkmark"></span>
+                    Uppercase Letters (ABC)
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="incLower" checked>
+                    <span class="checkmark"></span>
+                    Lowercase Letters (abc)
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="incNum" checked>
+                    <span class="checkmark"></span>
+                    Numbers (123)
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="incSyb" checked>
+                    <span class="checkmark"></span>
+                    Special Characters (!@#)
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="passGen.js"></script>
+</body>
+</html>
