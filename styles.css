@@ -44,6 +44,7 @@ h1 {
     color: #6c757d;
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .password-wrapper {
@@ -197,4 +198,8 @@ input[type="range"]::-webkit-slider-thumb {
     border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
+}
+
+#main-Heading{
+    text-align: center;
 }

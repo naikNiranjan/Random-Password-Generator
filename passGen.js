@@ -60,11 +60,11 @@ class PasswordGenerator {
         const length = parseInt(this.lengthSlider.value);
         let password = '';
         
-        // Ensure at least one character from each selected type
+      
         const requiredChars = this.getRequiredCharacters();
         password = requiredChars.join('');
 
-        // Fill the rest randomly
+        
         while (password.length < length) {
             const randomIndex = Math.floor(Math.random() * charset.length);
             password += charset[randomIndex];
