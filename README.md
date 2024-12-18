@@ -18,9 +18,5 @@ A modern, secure password generator built with HTML, CSS, and JavaScript. Genera
 - 🔄 Instant password regeneration
 - 📱 Responsive design for all devices
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 7dd6e3bcb58429279c25c2f1cc89623f344285c8
 
